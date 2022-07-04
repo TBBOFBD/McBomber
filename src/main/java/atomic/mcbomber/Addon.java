@@ -38,9 +38,6 @@ public class Addon extends MeteorAddon {
 
 		// HUD
         HUD.get().elements.add(new Hud());
-
-		// IPC
-
 	}
 
 	@Override

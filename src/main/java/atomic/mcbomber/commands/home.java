@@ -15,7 +15,7 @@ public class home extends Command {
     @Override
     public void build(LiteralArgumentBuilder<CommandSource> builder) {
         builder.executes(context -> {
-            ChatUtils.info("hi");
+            ChatUtils.info("#wp goto home");
             return SINGLE_SUCCESS;
         });
     }
