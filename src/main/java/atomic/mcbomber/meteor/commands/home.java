@@ -1,4 +1,4 @@
-package atomic.mcbomber.commands;
+package atomic.mcbomber.meteor.commands;
 
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import meteordevelopment.meteorclient.systems.commands.Command;

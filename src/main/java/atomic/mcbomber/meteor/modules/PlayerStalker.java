@@ -1,6 +1,6 @@
-package atomic.mcbomber.modules;
+package atomic.mcbomber.meteor.modules;
 
-import atomic.mcbomber.Addon;
+import atomic.mcbomber.meteor.Addon;
 import meteordevelopment.meteorclient.systems.modules.Module;
 
 public class PlayerStalker extends Module {

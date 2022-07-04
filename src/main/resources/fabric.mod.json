@@ -12,7 +12,7 @@
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "atomic.mcbomber.Addon"
+      "atomic.mcbomber.meteor.Addon"
     ]
   },
   "mixins": [

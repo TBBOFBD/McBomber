@@ -1,4 +1,4 @@
-package atomic.mcbomber.modules.hud;
+package atomic.mcbomber.meteor.modules.hud;
 
 import meteordevelopment.meteorclient.systems.hud.HUD;
 import meteordevelopment.meteorclient.systems.hud.modules.DoubleTextHudElement;

@@ -1,4 +1,4 @@
-package atomic.mcbomber;
+package atomic.mcbomber.meteor;
 
 import java.io.File;
 import org.slf4j.Logger;
@@ -10,10 +10,10 @@ import meteordevelopment.meteorclient.systems.commands.Commands;
 import meteordevelopment.meteorclient.systems.hud.HUD;
 import meteordevelopment.meteorclient.systems.modules.Category;
 import meteordevelopment.meteorclient.systems.modules.Modules;
-import atomic.mcbomber.commands.home;
-import atomic.mcbomber.modules.PlayerStalker;
-import atomic.mcbomber.modules.BaseEsp;
-import atomic.mcbomber.modules.hud.Hud;
+import atomic.mcbomber.meteor.commands.home;
+import atomic.mcbomber.meteor.modules.BaseEsp;
+import atomic.mcbomber.meteor.modules.PlayerStalker;
+import atomic.mcbomber.meteor.modules.hud.Hud;
 
 
 
@@ -24,7 +24,7 @@ public class Addon extends MeteorAddon {
 
 	@Override
 	public void onInitialize() {
-		LOG.info("Initializing Mcbomber");
+		LOG.info("Initializing Mcbomber MeteorAddon");
 
 		// Required when using @EventHandler
 		MeteorClient.EVENT_BUS.registerLambdaFactory("meteordevelopment.addons.template", (lookupInMethod, klass) -> (MethodHandles.Lookup) lookupInMethod.invoke(null, klass, MethodHandles.lookup()));
