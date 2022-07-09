@@ -10,10 +10,15 @@ import meteordevelopment.meteorclient.systems.commands.Commands;
 import meteordevelopment.meteorclient.systems.hud.HUD;
 import meteordevelopment.meteorclient.systems.modules.Category;
 import meteordevelopment.meteorclient.systems.modules.Modules;
-import atomic.mcbomber.commands.home;
+
+
+
+
 import atomic.mcbomber.modules.BaseEsp;
-import atomic.mcbomber.modules.PlayerStalker;
-import atomic.mcbomber.modules.hud.Hud;
+
+import atomic.mcbomber.commands.home;
+
+import atomic.mcbomber.hud.Hud;
 
 
 
@@ -31,7 +36,6 @@ public class Addon extends MeteorAddon {
 
 		// Modules
 		Modules.get().add(new BaseEsp());
-		Modules.get().add(new PlayerStalker());
 
 		// Commands
 		Commands.get().add(new home());
@@ -44,4 +48,5 @@ public class Addon extends MeteorAddon {
 	public void onRegisterCategories() {
 		Modules.registerCategory(CATEGORY);
 	}
+
 }
