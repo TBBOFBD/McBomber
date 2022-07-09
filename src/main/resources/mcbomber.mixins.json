@@ -1,9 +1,8 @@
 {
   "required": true,
-  "package": "atomic.mcbomber.client.mixins",
+  "package": "atomic.mcbomber.mixins",
   "compatibilityLevel": "JAVA_17",
   "client": [
-    "NoMeteorWaterMark"
   ],
   "injectors": {
     "defaultRequire": 1

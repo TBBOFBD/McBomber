@@ -1,4 +1,4 @@
-package atomic.mcbomber.meteor;
+package atomic.mcbomber;
 
 import java.io.File;
 import org.slf4j.Logger;
@@ -10,10 +10,10 @@ import meteordevelopment.meteorclient.systems.commands.Commands;
 import meteordevelopment.meteorclient.systems.hud.HUD;
 import meteordevelopment.meteorclient.systems.modules.Category;
 import meteordevelopment.meteorclient.systems.modules.Modules;
-import atomic.mcbomber.meteor.commands.home;
-import atomic.mcbomber.meteor.modules.BaseEsp;
-import atomic.mcbomber.meteor.modules.PlayerStalker;
-import atomic.mcbomber.meteor.modules.hud.Hud;
+import atomic.mcbomber.commands.home;
+import atomic.mcbomber.modules.BaseEsp;
+import atomic.mcbomber.modules.PlayerStalker;
+import atomic.mcbomber.modules.hud.Hud;
 
 
 
