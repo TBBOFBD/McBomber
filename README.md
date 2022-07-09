@@ -1,8 +1,11 @@
-# Meteor Addon Template
+# McBomber
 
-A template to allow easy usage of the Meteor Addon API.
+## Bomb Bases Easier
 
-### How to use:  
-- Clone this project
-- Use this template to create new modules/commands
-- Run the mod with Meteor.
+### Build
+
+```bash
+git clone https://github.com/AtomicGamer9523/McBomber
+cd McBomber
+./gradlew build
+```

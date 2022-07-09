@@ -28,6 +28,10 @@ dependencies {
 
     // Meteor
     modImplementation "meteordevelopment:meteor-client:${project.meteor_version}"
+
+    //Baritone
+    modImplementation "baritone:fabric:${project.baritone_version}"
+    include "baritone:fabric:${project.baritone_version}"
 }
 
 processResources {
