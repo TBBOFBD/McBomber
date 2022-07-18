@@ -3,6 +3,8 @@
   "package": "atomic.mcbomber.mixins",
   "compatibilityLevel": "JAVA_17",
   "client": [
+    "ChatPreviewerMixin",
+    "ChatScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

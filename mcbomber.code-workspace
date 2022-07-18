@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\meteor-client"
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": []
+	}
+}
