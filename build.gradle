@@ -1,6 +1,5 @@
 plugins {
     id 'fabric-loom' version '0.12-SNAPSHOT'
-    id 'maven-publish'
 }
 
 sourceCompatibility = targetCompatibility = JavaVersion.VERSION_17
@@ -11,15 +10,11 @@ group = project.maven_group
 
 repositories {
     maven {
-        name = "meteor-maven"
-        url = "https://maven.meteordev.org/releases"
+        name = 'Fabric'
+        url = 'https://maven.fabricmc.net/'
     }
-    maven {
-        name = "meteor-maven-snapshots"
-        url = "https://maven.meteordev.org/snapshots"
-    }
-    jcenter()
     mavenCentral()
+    gradlePluginPortal()
 }
 
 dependencies {
@@ -28,12 +23,8 @@ dependencies {
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-    // Meteor
-    modImplementation "meteordevelopment:meteor-client:${project.meteor_version}"
-
-    //Baritone
-    modImplementation "baritone:fabric:${project.baritone_version}"
-    include "baritone:fabric:${project.baritone_version}"
+    // Hypernite
+    modImplementation files('libs/hypernite-1.0.0.jar')
 }
 
 processResources {

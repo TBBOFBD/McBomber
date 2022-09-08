@@ -3,27 +3,31 @@
   "id": "mcbomber",
   "version": "${version}",
   "name": "McBomber",
-  "description": "Makes Bombing bases easier",
+  "description": "Bomb bases easier",
   "authors": [
-    "Atomic"
+    "Hypernite"
   ],
-  "license": "MIT",
-  "icon": "assets/mcbomber/icon.png",
-  "environment": "client",
+  "icon": "assets/icon.png",
+  "environment": "*",
   "entrypoints": {
-    "meteor": [
+    "hypernite": [
       "atomic.mcbomber.Addon"
+    ],
+    "client": [
+      "atomic.mcbomber.Client"
     ]
   },
   "mixins": [
     "mcbomber.mixins.json"
   ],
   "custom": {
-    "meteor-client:color": "225,25,25"
+    "hypernite:color": "225,25,25"
   },
   "depends": {
     "java": ">=17",
-    "minecraft": ">=${mc_version}",
-    "meteor-client": "*"
+    "minecraft": ">=${mc_version}"
+  },
+  "suggests":{
+    "hypernite": "*"
   }
 }

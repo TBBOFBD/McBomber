@@ -1,0 +1,56 @@
+package atomic.mcbomber;
+
+import net.minecraft.client.MinecraftClient;
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+
+public class Common {
+    public static final String PACKAGE = "atomic";
+    public static final String MOD_ID = "mcbomber";
+    public static final String MOD_NAME = "McBomber";
+    public static final Logger LOG = LoggerFactory.getLogger(MOD_NAME);
+
+    public static void init(Object init){
+        Initialiser.init(init);
+        LOG.info("Initializing " + Common.MOD_NAME + "\nInit type: " + INIT_TYPE);
+
+        if(!INIT_TYPE.equals(Initialiser.HYPERNITE)){
+            LOG.error("Loaded WITHOUT Hypernite, it will still work, just not completely");
+        }
+    }
+
+
+
+    public static MinecraftClient mc;
+    public static Initialiser INIT_TYPE = Initialiser.OTHER;
+    enum Initialiser {
+        HYPERNITE,
+        FABRIC,
+        OTHER;
+        private static void init(Object init) {
+            if (
+                INIT_TYPE.equals(Initialiser.OTHER) &&
+                init.getClass().getName().equals(Client.class.getName())
+            ) {
+                Common.INIT_TYPE = FABRIC;
+            } else if (
+                INIT_TYPE.equals(Initialiser.OTHER) &&
+                init.getClass().getName().equals(Addon.class.getName())
+            ) {
+                Common.INIT_TYPE = HYPERNITE;
+            } else if (
+                INIT_TYPE.equals(Initialiser.FABRIC) &&
+                init.getClass().getName().equals(Addon.class.getName())
+            ) {
+                Common.INIT_TYPE = HYPERNITE;
+            } else if (
+                INIT_TYPE.equals(Initialiser.HYPERNITE) &&
+                init.getClass().getName().equals(Client.class.getName())
+            ) {
+                Common.INIT_TYPE = HYPERNITE;
+            } else {
+                System.exit(70);
+            }
+        }
+    }
+}
