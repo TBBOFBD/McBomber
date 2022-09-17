@@ -6,7 +6,7 @@ import atomicgamer.hypernite.addons.HyperniteAddon;
 public class Addon extends HyperniteAddon {
     @Override
     public void onInitialize() {
-        Common.init(this);
+        Common.Initialiser.init(this);
         Systems.init();
     }
 

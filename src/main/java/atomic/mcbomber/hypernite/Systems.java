@@ -14,29 +14,29 @@ public class Systems {
     public static final Category CATEGORY = new Category(Common.MOD_NAME, net.minecraft.item.Items.TNT_MINECART.getDefaultStack());
     public static final HudGroup HUD_GROUP = new HudGroup(Common.MOD_NAME);
 
-    // Modify
+
     private static void initModules() {
         Modules.get().add(new ModuleExample());
     }
 
-    // Modify
+
     private static void initCommands() {
         Commands.get().add(new CommandExample());
     }
 
-    // Modify
+
     private static void initHud() {
         Hud.get().register(HudExample.INFO);
     }
 
 
-    //! NO MODIFY
+
     public static void init() {
         initCommands();
         initModules();
         initHud();
     }
-    //! NO MODIFY
+
     public static void registerCategories() {
         Modules.registerCategory(CATEGORY);
     }

@@ -7,7 +7,7 @@ public class Client implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         Common.LOG.error("Loading Fabric Metadata");
-        Common.init(this);
+        Common.Initialiser.init(this);
         Common.mc = MinecraftClient.getInstance();
     }
 }
